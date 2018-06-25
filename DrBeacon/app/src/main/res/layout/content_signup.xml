@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mc.nj.proj.SignupActivity"
+    tools:showIn="@layout/activity_signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/textholder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/null1"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/user" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginName"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal"
+        android:text="@string/step1"
+        android:textSize="25dp"
+        android:textStyle="italic|bold" />
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mc.nj.proj.SignupData"
+    tools:showIn="@layout/activity_signup2">
+
+    <TextView
+        android:id="@+id/loginName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal"
+        android:text="@string/step3"
+        android:textSize="25dp"
+        android:textStyle="italic|bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/Disease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Condition"
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/medicalList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/medical_list"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/null1"
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/healthy" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/allergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Allergy "
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/allergyList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:entries="@array/allergy_list" />
+
+                <ImageView
+                    android:id="@+id/null3"
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/allergy" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/foodallergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Allergy "
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/foodallergyList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:entries="@array/foodallergy_list" />
+
+                <ImageView
+                    android:id="@+id/null2"
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/foodallergy" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="@string/activity"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+
+
+        <RadioGroup
+            android:id="@+id/activity_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/level1"
+                android:layout_width="74dp"
+                android:layout_height="68dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="0dp" />
+
+            <RadioButton
+                android:id="@+id/level2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="0dp" />
+
+            <RadioButton
+                android:id="@+id/level3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="0dp" />
+
+            <RadioButton
+                android:id="@+id/level4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="0dp" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/actDetCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/activity_details"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dr. Beacon</string>
+    <string name="app_name">Proj</string>
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
@@ -13,16 +13,14 @@
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="Title"><u>Dr. Beacon</u></string>
+    <string name="error_field_required">This field is required</string>
     <string name="subtitle"><b>Guiding you towards a healthier lifestyle</b></string>
+    <string name="Title"><u>Dr. Beacon</u></string>
     <string name="logintitle"><u>Let\'s get started</u></string>
     <string name="step1">Step1(3): Let\'s create your Account</string>
     <string name="step2">Step2(3): Personal Information</string>
     <string name="step3">Step3(3): Any Allergies? </string>
     <string name="activity">How active are you(1-4)?</string>
-    <string name="TAG">Dr Beacon</string>
-
-    <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
@@ -32,29 +30,20 @@
     <string name="title_activity_profile">ProfileActivity</string>
 
     <string-array name="medical_list">
-        <item>None</item>
         <item>Healthy</item>
-        <item>Heart Disease</item>
-        <item>Diabetes</item>
+        <item>Diabities</item>
+        <item>Blood Pressure</item>
         <item>Obesity</item>
     </string-array>
 
     <string-array name="allergy_list">
-        <item>None</item>
         <item>Pollen</item>
-        <item>DustMites</item>
-    </string-array>
-
-    <string-array name="foodallergy_list">
-        <item>None</item>
-        <item>Lactose</item>
-        <item>Nuts</item>
-        <item>Gluten</item>
+        <item>Fooditem1</item>
+        <item>FoodItem2</item>
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_signup">Signup</string>
-    <string name="title_activity_login1">Sign in</string>
 
 </resources>

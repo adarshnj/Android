@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mc.nj.proj.SignupData"
+    tools:showIn="@layout/activity_signup1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/loginName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center_horizontal"
+            android:text="@string/step2"
+            android:textSize="25dp"
+            android:textStyle="italic|bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:id="@+id/iconHolder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/height" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/weight" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/age" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/gender" />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ageHolder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Height"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="Height" />
+
+            <NumberPicker
+                android:id="@+id/height"
+                style="@style/AppTheme"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"></NumberPicker>
+
+            <TextView
+                android:id="@+id/heightText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:text="Weight" />
+
+            <NumberPicker
+                android:id="@+id/weight"
+                style="@style/AppTheme"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"></NumberPicker>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center|left"
+                android:text="  lbs" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/weightHolder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/genderHolder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.11">
+            <TextView
+                android:id="@+id/Age"
+                android:layout_width="46dp"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="Age" />
+
+            <NumberPicker
+                android:id="@+id/age"
+                style="@style/AppTheme"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"></NumberPicker>
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:text="Gender" />
+
+            <RadioGroup
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:id="@+id/genderText"
+                android:layout_weight="1"
+                android:layout_gravity="right">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

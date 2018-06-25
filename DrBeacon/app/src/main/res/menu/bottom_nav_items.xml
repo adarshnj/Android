@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/RecentFrag"
+        android:icon="@drawable/recent"
+        android:showAsAction="always"
+        android:title="Recent" />
+
+    <item
+        android:id="@+id/BeaconFrag"
+        android:icon="@drawable/beacon"
+        android:showAsAction="always"
+        android:title="Beacon" />
+
+    <item
+        android:id="@+id/ProfileFrag"
+        android:icon="@drawable/user"
+        android:showAsAction="always"
+        android:title="User" />
+
+</menu>
